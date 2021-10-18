@@ -1,5 +1,6 @@
 import unittest
 from main import Chto_Bolit
+from main import Golova
 
 
 class Test_Chto_Bolit(unittest.TestCase):
@@ -55,16 +56,19 @@ class Test_Golova(unittest.TestCase):
     def setUp(self):
         self.gol = Golova()
     def test_golova1(self):
-        self.assertEqual(self.bolit_golova("да"), "Сходите к терапевту")
+        self.assertEqual(self.gol.bolit_golova("да"), "Сходите к терапевту")
 
     def test_golova2(self):
-        self.assertEqual(self.bolit_golova("нет", "да"), "Сходите в травмпункт")
+        self.assertEqual(self.gol.bolit_golova("нет", "да"), "Сходите в травмпункт")
 
     def test_golova3(self):
-        self.assertEqual(self.bolit_golova("нет", "нет", "нет", "да"), "Выпей коньячку")
+        self.assertEqual(self.gol.bolit_golova("нет", "нет", "да"), "Сходите на МРТ")
 
     def test_golova4(self):
-        self.assertEqual(self.bolit_golova("нет", "нет", "нет", "нет"), "Симулянт")
+        self.assertEqual(self.gol.bolit_golova("нет", "нет", "нет", "да"), "Выпейте коньячку")
+
+    def test_golova5(self):
+        self.assertEqual(self.gol.bolit_golova("нет", "нет", "нет", "нет"), "Симулянт")
 
 
 

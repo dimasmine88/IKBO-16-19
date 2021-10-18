@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a233e611-83b1-4a07-a49a-22b8423b0a4e" name="Default Changelist" comment="Исправил тесты для класса Chto_Bolit">
+    <list default="true" id="a233e611-83b1-4a07-a49a-22b8423b0a4e" name="Default Changelist" comment="Не видит голову">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -103,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634595563286</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Не видит голову">
+      <created>1634596868301</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634596868301</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +129,7 @@
     <MESSAGE value="Добавил тесты для симптомов головной боли" />
     <MESSAGE value="Тестовый коммит для класса Chto_Bolit" />
     <MESSAGE value="Исправил тесты для класса Chto_Bolit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправил тесты для класса Chto_Bolit" />
+    <MESSAGE value="Не видит голову" />
+    <option name="LAST_COMMIT_MESSAGE" value="Не видит голову" />
   </component>
 </project>

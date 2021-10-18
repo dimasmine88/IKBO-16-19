@@ -27,6 +27,3 @@ class Golova():
                         return "Выпейте коньячку"
                     elif (g4 == "нет"):
                         return "Симулянт"
-
-    chto = Chto_Bolit()
-    gol = Golova()

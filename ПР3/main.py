@@ -1,14 +1,15 @@
-class Chto_Bolit:
+class Chto_Bolit():
     def chto_bolit(self, a):
         if (a == 1):
-            return 'голова'
+            return "голова"
         elif (a == 2):
             return "грудь"
         elif (a == 3):
             return "горло"
 
-class Golova:
-    def golova(self, g1, g2, g3, g4):
+
+class Golova():
+    def bolit_golova(self, g1, g2, g3, g4):
         print("Температура выше 37.8?")
         if (g1 == "да"):
             return "Сходите к терапевту"
@@ -18,6 +19,14 @@ class Golova:
                 return "Сходите в травмпункт"
             elif (g2 == "нет"):
                 print("Головокружение есть?")
-
+                if (g3 == "да"):
+                    return "Сходите на МРТ"
+                elif (g3 == "нет"):
+                    print("Давление повышено?")
+                    if (g4 == "да"):
+                        return "Выпейте коньячку"
+                    elif (g4 == "нет"):
+                        return "Симулянт"
 
     chto = Chto_Bolit()
+    gol = Golova()

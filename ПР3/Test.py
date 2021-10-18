@@ -52,6 +52,8 @@ class Test_Gorlo(unittest.TestCase):
         self.assertEqual(self.bolit_gorlo("нет", "нет", "нет"), "Симулянт")
 
 class Test_Golova(unittest.TestCase):
+    def setUp(self):
+        self.gol = Golova()
     def test_golova1(self):
         self.assertEqual(self.bolit_golova("да"), "Сходите к терапевту")
 
@@ -59,15 +61,9 @@ class Test_Golova(unittest.TestCase):
         self.assertEqual(self.bolit_golova("нет", "да"), "Сходите в травмпункт")
 
     def test_golova3(self):
-        self.assertEqual(self.bolit_golova("нет", "нет", "да", "да"), "У вас возможно солнечный удар")
-
-    def test_golova4(self):
-        self.assertEqual(self.bolit_golova("нет", "нет", "да", "нет"), "Сходите на МРТ")
-
-    def test_golova5(self):
         self.assertEqual(self.bolit_golova("нет", "нет", "нет", "да"), "Выпей коньячку")
 
-    def test_golova6(self):
+    def test_golova4(self):
         self.assertEqual(self.bolit_golova("нет", "нет", "нет", "нет"), "Симулянт")
 
 

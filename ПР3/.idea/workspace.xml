@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a233e611-83b1-4a07-a49a-22b8423b0a4e" name="Default Changelist" comment="Тестовый коммит для класса Chto_Bolit">
+    <list default="true" id="a233e611-83b1-4a07-a49a-22b8423b0a4e" name="Default Changelist" comment="Исправил тесты для класса Chto_Bolit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -15,7 +15,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="RunManager" selected="Python tests.Unittests for Test.Test_Chto_Bolit.test_chto_bolit1">
+  <component name="RunManager" selected="Python tests.Unittests for Test.Test_Golova">
     <configuration name="Unittests for Test.Test_Chto_Bolit" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="ПР3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -44,6 +44,20 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for Test.Test_Golova" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="ПР3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test.Test_Golova&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in Test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="ПР3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -60,8 +74,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for Test.Test_Chto_Bolit.test_chto_bolit1" />
+        <item itemvalue="Python tests.Unittests for Test.Test_Golova" />
         <item itemvalue="Python tests.Unittests for Test.Test_Chto_Bolit" />
+        <item itemvalue="Python tests.Unittests for Test.Test_Chto_Bolit.test_chto_bolit1" />
         <item itemvalue="Python tests.Unittests in Test.py" />
       </list>
     </recent_temporary>
@@ -81,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634594969606</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Исправил тесты для класса Chto_Bolit">
+      <created>1634595563286</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634595563286</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавил тесты для симптомов головной боли" />
     <MESSAGE value="Тестовый коммит для класса Chto_Bolit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тестовый коммит для класса Chto_Bolit" />
+    <MESSAGE value="Исправил тесты для класса Chto_Bolit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправил тесты для класса Chto_Bolit" />
   </component>
 </project>

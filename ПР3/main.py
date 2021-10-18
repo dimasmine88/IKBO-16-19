@@ -1,16 +1,23 @@
-# This is a sample Python script.
+class Chto_Bolit:
+    def chto_bolit(self, a):
+        if (a == 1):
+            return 'голова'
+        elif (a == 2):
+            return "грудь"
+        elif (a == 3):
+            return "горло"
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+class Golova:
+    def golova(self, g1, g2, g3, g4):
+        print("Температура выше 37.8?")
+        if (g1 == "да"):
+            return "Сходите к терапевту"
+        elif (g1 == "нет"):
+            print("Были ли травмы головы недавно?")
+            if (g2 == "да"):
+                return "Сходите в травмпункт"
+            elif (g2 == "нет"):
+                return ""
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    chto = Chto_Bolit()

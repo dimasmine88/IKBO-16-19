@@ -4,15 +4,16 @@ from main import Chto_Bolit
 
 class Test_Chto_Bolit(unittest.TestCase):
     def setUp(self):
-        self.chto_bolit = Chto_Bolit()
-    def test_chto_bolit1(self, a):
-        self.assertEqual(self.chto_bolit(1), "голова")
+        self.chto = Chto_Bolit()
 
-    def test_chto_bolit2(self, a):
-        self.assertEqual(self.chto_bolit(2), "грудь")
+    def test_chto_bolit1(self):
+        self.assertEqual(self.chto.chto_bolit(1), "голова")
 
-    def test_chto_bolit3(self, a):
-        self.assertEqual(self.chto_bolit(3), "горло")
+    def test_chto_bolit2(self):
+        self.assertEqual(self.chto.chto_bolit(2), "грудь")
+
+    def test_chto_bolit3(self):
+        self.assertEqual(self.chto.chto_bolit(3), "горло")
 
 class Test_Grudi(unittest.TestCase):
     def test_grudi1(self):

@@ -17,7 +17,7 @@ class Golova:
             if (g2 == "да"):
                 return "Сходите в травмпункт"
             elif (g2 == "нет"):
-                return ""
+                print("Головокружение есть?")
 
 
     chto = Chto_Bolit()

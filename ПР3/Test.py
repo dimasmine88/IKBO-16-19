@@ -12,5 +12,16 @@ class Test_Chto_Bolit(unittest.TestCase):
         self.assertEqual(self.chto_bolit(3), "горло")
 
 
+class Test_Grudi(unittest.TestCase):
+    def test_grudi1(self):
+        self.assertEqual(self.bolit_grudi("да"), "Обратись к кардиологу")
+    def test_grudi2(self):
+        self.assertEqual(self.bolit_grudi("нет", "да"), "Обратись к пульмологу")
+    def test_grudi3(self):
+        self.assertEqual(self.bolit_grudi("нет", "нет", "да"), "Сходите в травмпункт")
+    def test_grudi4(self):
+        self.assertEqual(self.bolit_grudi("нет", "нет", "нет"), "Симулянт")
+
+
 if __name__ == '__main__':
     unittest.main()

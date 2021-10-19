@@ -47,13 +47,13 @@ class Test_Gorlo(unittest.TestCase):
         self.assertEqual(self.gor.bolit_gorlo("да", "да", "сухой", "", "",), "Тонзиллит")
 
     def test_gorlo5(self):
-        self.assertEqual(self.gor.bolit_gorlo("нет", "да", "", "", "",), "Не напрягайте их в ближайшее время")
+        self.assertEqual(self.gor.bolit_gorlo("нет", "", "", "да", ""), "Не напрягайте их в ближайшее время")
 
     def test_gorlo6(self):
-        self.assertEqual(self.gor.bolit_gorlo("нет", "нет", "да", "", "",), "Обратись к ЛОР-врачу")
+        self.assertEqual(self.gor.bolit_gorlo("нет", "", "", "нет", "да"), "Обратись к ЛОР-врачу")
 
     def test_gorlo7(self):
-        self.assertEqual(self.gor.bolit_gorlo("нет", "нет", "нет", "", "",), "Симулянт")
+        self.assertEqual(self.gor.bolit_gorlo("нет", "", "", "нет", "нет"), "Симулянт")
 
 class Test_Golova(unittest.TestCase):
     def setUp(self):

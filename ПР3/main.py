@@ -46,7 +46,7 @@ class Grudi():
                     return("Симулянт")
 
 class Gorlo():
-    def bolit_grudi(self, v1, v2, v3, v4, v5):
+    def bolit_gorlo(self, v1, v2, v3, v4, v5):
         print("Першит ли горло?")
         if (v1 == "да"):
             print("Кашель есть?")

@@ -18,10 +18,10 @@ class Test_Chto_Bolit(unittest.TestCase):
 
 class Test_Grudi(unittest.TestCase):
     def test_grudi1(self):
-        self.assertEqual(self.bolit_grudi("да"), "Обратись к кардиологу")
+        self.assertEqual(self.bolit_grudi("да", "", ""), "Обратитесь к кардиологу")
 
     def test_grudi2(self):
-        self.assertEqual(self.bolit_grudi("нет", "да"), "Обратись к пульмологу")
+        self.assertEqual(self.bolit_grudi("нет", "да", ""), "Обратись к пульмологу")
 
     def test_grudi3(self):
         self.assertEqual(self.bolit_grudi("нет", "нет", "да"), "Сходите в травмпункт")

@@ -33,7 +33,7 @@ class Grudi():
     def bolit_grudi(self, r1, r2, r3):
         print("Болит сердце?")
         if (r1 == "да"):
-            return "Обратитесь к кардиологом"
+            return "Обратитесь к кардиологу"
         elif (r1 == "нет"):
             print("Болят легкие?")
             if (r2 == "да"):

@@ -1,6 +1,6 @@
 import unittest
 from main import Chto_Bolit
-from main import Golova
+from main import Golova, Grudi
 
 
 class Test_Chto_Bolit(unittest.TestCase):
@@ -17,17 +17,19 @@ class Test_Chto_Bolit(unittest.TestCase):
         self.assertEqual(self.chto.chto_bolit(3), "горло")
 
 class Test_Grudi(unittest.TestCase):
+    def setUp(self):
+        self.gru = Grudi()
     def test_grudi1(self):
-        self.assertEqual(self.bolit_grudi("да", "", ""), "Обратитесь к кардиологу")
+        self.assertEqual(self.gru.bolit_grudi("да", "", ""), "Обратитесь к кардиологу")
 
     def test_grudi2(self):
-        self.assertEqual(self.bolit_grudi("нет", "да", ""), "Обратись к пульмологу")
+        self.assertEqual(self.gru.bolit_grudi("нет", "да", ""), "Обратитесь к пульмологу")
 
     def test_grudi3(self):
-        self.assertEqual(self.bolit_grudi("нет", "нет", "да"), "Сходите в травмпункт")
+        self.assertEqual(self.gru.bolit_grudi("нет", "нет", "да"), "Сходите в травмпункт")
 
     def test_grudi4(self):
-        self.assertEqual(self.bolit_grudi("нет", "нет", "нет"), "Симулянт")
+        self.assertEqual(self.gru.bolit_grudi("нет", "нет", "нет"), "Симулянт")
 
 
 class Test_Gorlo(unittest.TestCase):

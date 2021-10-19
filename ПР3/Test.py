@@ -1,7 +1,6 @@
 import unittest
 from main import Chto_Bolit
-from main import Golova, Grudi
-
+from main import Golova, Grudi, Gorlo
 
 class Test_Chto_Bolit(unittest.TestCase):
     def setUp(self):
@@ -33,26 +32,28 @@ class Test_Grudi(unittest.TestCase):
 
 
 class Test_Gorlo(unittest.TestCase):
+    def setUp(self):
+        self.gor = Gorlo()
     def test_gorlo1(self):
-        self.assertEqual(self.bolit_gorlo("да"), "Кашель есть?")
+        self.assertEqual(self.gor.bolit_gorlo("да", "да", "сухой", "", "",), "Тонзиллит")
 
     def test_gorlo2(self):
-        self.assertEqual(self.bolit_gorlo("да", "нет"), "Ангина")
+        self.assertEqual(self.gor.bolit_gorlo("да", "нет", "", "", "",), "Ангина")
 
     def test_gorlo3(self):
-        self.assertEqual(self.bolit_gorlo("да", "да", "влажный"), "Бронхит")
+        self.assertEqual(self.gor.bolit_gorlo("да", "да", "влажный", "", "",), "Бронхит")
 
     def test_gorlo4(self):
-        self.assertEqual(self.bolit_gorlo("да", "да", "сухой"), "Тонзиллит")
+        self.assertEqual(self.gor.bolit_gorlo("да", "да", "сухой", "", "",), "Тонзиллит")
 
     def test_gorlo5(self):
-        self.assertEqual(self.bolit_gorlo("нет", "да"), "Не напрягайте их в ближайшее время")
+        self.assertEqual(self.gor.bolit_gorlo("нет", "да", "", "", "",), "Не напрягайте их в ближайшее время")
 
     def test_gorlo6(self):
-        self.assertEqual(self.bolit_gorlo("нет", "нет", "да"), "Обратись к ЛОР-врачу")
+        self.assertEqual(self.gor.bolit_gorlo("нет", "нет", "да", "", "",), "Обратись к ЛОР-врачу")
 
     def test_gorlo7(self):
-        self.assertEqual(self.bolit_gorlo("нет", "нет", "нет"), "Симулянт")
+        self.assertEqual(self.gor.bolit_gorlo("нет", "нет", "нет", "", "",), "Симулянт")
 
 class Test_Golova(unittest.TestCase):
     def setUp(self):
